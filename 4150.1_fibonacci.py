@@ -8,6 +8,7 @@ input = sys.stdin.readline
 sys.setrecursionlimit(10**6)
 
 n = int(input())
+
 # 한 번 계산된 결과를 메모이제이션(Memoization)하기 위한 리스트 초기화, index 1부터 사용
 d = [0] * (n+1)
 
