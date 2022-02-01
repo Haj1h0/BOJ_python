@@ -2,6 +2,7 @@ import sys
 input = sys.stdin.readline
 
 # 한 번 계산된 결과를 메모이제이션(Memoization)하기 위한 리스트 초기화, index 1부터 사용
+# cf) [[0,0]*2] = [[0,0,0,0]] 리스트 곱셈으로 동작
 dp = [[[0 for i in range(21)] for i in range(21)] for i in range(21)]
 
 # top-down
