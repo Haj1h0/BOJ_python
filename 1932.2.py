@@ -12,7 +12,7 @@ for _ in range(n):
     else:  # index 0인 경우
       floor[i] += dp[i] 
 
-  # 다음 층 계산을 위해 해당 층마다 floor list에 최대 경로 구한 값을 dp리스트로 옮기기  
+  # 다음 층 계산을 위해 해당 층마다 floor list에 최대 경로 구한 값을 dp table로 옮기기  
   dp[:len(floor)] = floor[:len(floor)]  
 
 print(max(dp))
